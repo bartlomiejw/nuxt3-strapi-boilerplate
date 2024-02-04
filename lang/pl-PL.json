@@ -1,0 +1,133 @@
+{
+  "locale.en-US": "Angielski",
+  "locale.fr-FR": "Francuski",
+  "locale.ar-AR": "Arabski",
+  "locale.pl-PL": "Polski",
+  "locale.dir": "ltr",
+  "site": {
+    "name": "Nuxt 3 | Strapi | PrimeVue | Sentry Boilerplate"
+  },
+  "themes": {
+    "system": "Systemowy",
+    "light": "Jasny",
+    "dark": "Ciemny"
+  },
+  "cookies": {
+    "bar": {
+      "title": "🍪 Cześć. Ta strona używa plików cookie",
+      "description": "Używamy plików cookie i podobnych technologii, aby personalizować treść i oferować lepsze doświadczenie. Możesz dostosować je, klikając przycisk dostosuj."
+    },
+    "modal": {
+      "title": "Dostosuj",
+      "description": "Używamy różnych rodzajów plików cookie, aby zoptymalizować Twoje doświadczenie na naszej stronie internetowej. Kliknij w poniższe kategorie, aby dowiedzieć się więcej o ich celach. Możesz wybrać rodzaje plików cookie do zezwolenia i później zmienić swoje preferencje. Pamiętaj, że wyłączenie plików cookie może wpłynąć na Twoje doświadczenie.",
+      "privacy-policy": "Polityka prywatności"
+    },
+    "necessary": {
+      "title": "Pliki cookie ścisłego",
+      "description": "Te pliki cookie są niezbędne do prawidłowego funkcjonowania mojej strony internetowej. Bez tych plików cookie strona internetowa nie działałaby poprawnie"
+    }
+  },
+  "error": {
+    "return": "Wróć",
+    "page-not-found": "Strona nie znaleziona"
+  },
+  "pages": {
+    "index": {
+      "meta": {
+        "title": "Strona główna",
+        "description": "Strona główna"
+      },
+      "link": "Strona główna",
+      "hero": {
+        "title": "Nuxt 3 Strapi PrimeVue Sentry Boilerplate",
+        "subtitle": "Nieoficjalny",
+        "description": "Gotowy do użycia starter kit do wszelkiego rodzaju projektów"
+      },
+      "features": {
+        "googleFonts": "Google Fonts",
+        "eslint": "ESLint",
+        "Typescript": "Typescript",
+        "Prettier": "Prettier",
+        "imageOptim": "Optymalizacja obrazów",
+        "TailwindCSS": "TailwindCSS",
+        "darkMode": "Tryb ciemny",
+        "i18n": "Lokalizacja (i18n)",
+        "postcss": "PostCSS",
+        "lightHouse": "Lighthouse 100%",
+        "deviceDetect": "Wykrywanie urządzeń",
+        "cookies": "Banner cookie",
+        "Iconify": "Iconify",
+        "Pinia": "Pinia",
+        "Strapi": "Strapi",
+        "GraphQL": "GraphQL",
+        "PrimeVue": "PrimeVue",
+        "PrimeIcons": "PrimeIcons",
+        "Husky": "Husky",
+        "Sentry": "Sentry"
+      }
+    },
+    "about": {
+      "meta": {
+        "title": "O nas",
+        "description": "Strona o nas"
+      },
+      "link": "O nas",
+      "title": "O nas",
+      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iste atque, hic porro officiis fugit quae deserunt nobis dolorum odit dignissimos consequatur esse maiores repellat impedit. Quae dolorum id rem?"
+    },
+    "contact": {
+      "meta": {
+        "title": "Kontakt",
+        "description": "Strona kontakt"
+      },
+      "link": "Kontakt",
+      "title": "Kontakt",
+      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iste atque, hic porro officiis fugit quae deserunt nobis dolorum odit dignissimos consequatur esse maiores repellat impedit. Quae dolorum id rem?"
+    },
+    "minimal": {
+      "meta": {
+        "title": "Minimalna strona (Pełny ekran)",
+        "description": "Minimalna strona korzystająca z pełnoekranowego układu"
+      },
+      "link": "Minimalna",
+      "title": "Minimalna z pełnoekranowym układem",
+      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iste atque, hic porro officiis fugit quae deserunt nobis dolorum odit dignissimos consequatur esse maiores repellat impedit. Quae dolorum id rem?"
+    }
+  },
+  "menu": {
+    "home": {
+      "title": "Strona główna"
+    },
+    "about": {
+      "title": "O nas"
+    },
+    "projects": {
+      "title": "Projekty",
+      "child": {
+        "core": {
+          "title": "Rdzeń"
+        },
+        "blocks": {
+          "title": "Bloki"
+        },
+        "ui-kit": {
+          "title": "UI Kit"
+        },
+        "templates": {
+          "title": "Szablony",
+          "child": {
+            "apollo": {
+              "title": "Apollo"
+            },
+            "ultima": {
+              "title": "Ultima"
+            }
+          }
+        }
+      }
+    },
+    "contact": {
+      "title": "Kontakt"
+    }
+  }
+}

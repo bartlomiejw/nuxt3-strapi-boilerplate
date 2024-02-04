@@ -1,0 +1,15 @@
+{
+  "name": "Strapi Remote Schema",
+  "schemaPath": "remote-schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "backend": {
+        "url": "http://localhost:1337/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": true
+      }
+    }
+  }
+}
