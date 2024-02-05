@@ -4,7 +4,7 @@ This is a Nuxt.js application using Strapi as the backend.
 
 A ready to use Nuxt 3 boilerplate
 
-Live Demo: https://nuxt-boilerplate.onrender.com/
+Live Demo: https://nuxt3-strapi-boilerplate.onrender.com/
 
 StackBlitz: https://stackblitz.com/github/bartlomiejw/nuxt3-strapi-boilerplate
 
