@@ -6,7 +6,7 @@ A ready to use Nuxt 3 boilerplate
 
 Live Demo: https://nuxt-boilerplate.onrender.com/
 
-StackBlitz: ~/
+StackBlitz: https://stackblitz.com/github/bartlomiejw/nuxt3-strapi-boilerplate
 
 ## Quick start
 
