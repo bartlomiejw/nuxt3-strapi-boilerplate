@@ -6,7 +6,7 @@ A ready to use Nuxt 3 boilerplate
 
 Live Demo: https://nuxt-boilerplate.onrender.com/
 
-StackBlitz: https://stackblitz.com/github/renegadevi/nuxt-boilerplate
+StackBlitz: ~/
 
 ## Quick start
 
@@ -72,7 +72,7 @@ pnpm run dev
 - **vee-validate**: Form validation library.
 - **yup**: Object schema validation.
 - **yup-password**: Yup plugin for password validation.
-- 
+
 ## Nuxt Modules included:
 
 - [eslint](https://nuxt.com/modules/eslint)
