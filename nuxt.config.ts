@@ -1,27 +1,30 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import path from 'node:path';
 import { defineNuxtConfig } from 'nuxt/config';
-import en from './lang/en-US.json';
-import fr from './lang/fr-FR.json';
-import ar from './lang/ar-AR.json';
-import pl from './lang/pl-PL.json';
+import en from './i18n/locales/en-US.json';
+import fr from './i18n/locales/fr-FR.json';
+import ar from './i18n/locales/ar-AR.json';
+import pl from './i18n/locales/pl-PL.json';
 
 const baseUrl = '/';
 
 export default defineNuxtConfig({
     devtools: { enabled: true },
+
     nitro: {
         compressPublicAssets: true,
         logLevel: 4
     },
+
     pages: true,
+
     modules: [
         '@nuxtjs/eslint-module',
         '@pinia/nuxt',
         '@nuxtjs/device',
         'nuxt-icon',
         '@nuxt/image',
-        '@nuxtjs/tailwindcss',
+        // '@nuxtjs/tailwindcss',
         '@nuxtjs/google-fonts',
         '@nuxtjs/color-mode',
         '@nuxtjs/i18n',
@@ -29,6 +32,7 @@ export default defineNuxtConfig({
         'nuxt-graphql-client',
         'nuxt-primevue'
     ],
+
     postcss: {
         plugins: {
             'postcss-import': {},
@@ -36,14 +40,18 @@ export default defineNuxtConfig({
             autoprefixer: {}
         }
     },
+
     css: ['primeicons/primeicons.css', '~/assets/scss/theme.scss'],
+
     imports: {
-        dirs: ['./stores', './lang']
+        dirs: ['./stores']
     },
+
     pinia: {
         // @ts-ignore
         autoImports: ['defineStore', 'acceptHMRUpdate']
     },
+
     app: {
         head: {
             title: 'Nuxt Strapi App - Project based on Nuxt framework with Strapi',
@@ -96,17 +104,21 @@ export default defineNuxtConfig({
             ]
         }
     },
+
     colorMode: {
         classSuffix: ''
     },
+
     eslint: {
         lintOnStart: false
     },
+
     image: {
         provider: 'ipx',
         quality: 80,
         format: ['png', 'jpeg', 'webp']
     },
+
     runtimeConfig: {
         public: {
             GQL_HOST: process.env.GQL_HOST,
@@ -116,13 +128,24 @@ export default defineNuxtConfig({
             }
         }
     },
+
     // @nuxtjs/tailwindcss
-    tailwindcss: {
-        cssPath: '~/assets/css/tailwind.css',
-        configPath: 'tailwind.config.ts',
-        exposeConfig: false,
-        viewer: true
-    },
+    // tailwindcss: {
+    //     cssPath: '~/assets/css/tailwind.css',
+    //     configPath: 'tailwind.config.ts',
+    //     exposeConfig: false,
+    //     viewer: false,
+    //     config: {
+    //         // Your Tailwind config here
+    //         content: [
+    //             "./components/**/*.{js,vue,ts}",
+    //             "./layouts/**/*.vue",
+    //             "./pages/**/*.vue",
+    //             "./plugins/**/*.{js,ts}",
+    //             "./nuxt.config.{js,ts}"
+    //         ]
+    //     }
+    // },
     // module: nuxt-primevue
     primevue: {
         options: {
@@ -134,6 +157,7 @@ export default defineNuxtConfig({
             from: path.resolve(__dirname, './presets/lara/')
         }
     },
+
     // module: @nuxtjs/google-fonts
     googleFonts: {
         families: {
@@ -143,10 +167,45 @@ export default defineNuxtConfig({
         prefetch: true,
         preconnect: true
     },
+
     // @nuxtjs/i18n
     i18n: {
-        vueI18n: './i18n.config.ts'
+        defaultLocale: 'en',
+        strategy: 'prefix_except_default',
+        baseUrl: baseUrl,
+        locales: [
+            {
+                code: 'en',
+                iso: 'en-US',
+                file: 'en-US.json',
+                isCatchallLocale: true
+            },
+            {
+                code: 'fr',
+                iso: 'fr-FR',
+                file: 'fr-FR.json'
+            },
+            {
+                code: 'ar',
+                iso: 'ar-AR',
+                file: 'ar-AR.json'
+            },
+            {
+                code: 'pl',
+                iso: 'pl-PL',
+                file: 'pl-PL.json'
+            }
+        ],
+        compilation: {
+            strictMessage: false
+        },
+        detectBrowserLanguage: {
+            useCookie: true,
+            cookieKey: 'i18n_redirected',
+            redirectOn: 'root'
+        }
     },
+
     // @dargmuesli/nuxt-cookie-control
     cookieControl: {
         cookieExpiryOffsetMs: 1000 * 60 * 60 * 24 * 365, // one year
@@ -181,5 +240,7 @@ export default defineNuxtConfig({
             optional: []
         },
         locales: ['en', 'fr', 'ar', 'pl']
-    }
+    },
+
+    compatibilityDate: '2025-04-10'
 });

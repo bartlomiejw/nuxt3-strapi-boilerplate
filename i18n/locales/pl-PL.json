@@ -1,8 +1,8 @@
 {
-  "locale.en-US": "Angielski",
-  "locale.fr-FR": "Francuski",
-  "locale.ar-AR": "Arabski",
-  "locale.pl-PL": "Polski",
+  "locale.en": "Angielski",
+  "locale.fr": "Francuski",
+  "locale.ar": "Arabski",
+  "locale.pl": "Polski",
   "locale.dir": "ltr",
   "site": {
     "name": "Nuxt 3 | Strapi | PrimeVue | Sentry Boilerplate"

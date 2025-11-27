@@ -1,8 +1,8 @@
 {
-  "locale.en-US": "English",
-  "locale.fr-FR": "French",
-  "locale.ar-AR": "العربية",
-  "locale.pl-PL": "Polish",
+  "locale.en": "English",
+  "locale.fr": "French",
+  "locale.ar": "العربية",
+  "locale.pl": "Polish",
   "locale.dir": "rtl",
   "site": {
     "name": "قالب Nuxt 3 | Strapi | PrimeVue | Sentry"
@@ -127,7 +127,7 @@
       }
     },
     "contact": {
-      "title": "ألتيما"
+      "title": "اتصال"
     }
   }
 }
